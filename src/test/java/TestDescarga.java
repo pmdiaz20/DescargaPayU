@@ -34,13 +34,15 @@ public class TestDescarga extends BaseTest{
 
 
         transaccionesPage = reportsPage.clickInTransacciones();
-        transaccionesPage.enviarDescarga(cuentaCO,fechaAyer);
+        transaccionesPage.enviarDescarga(cuentaAR,fechaAyer);
 
         // baja el archivo transactions.csv en C:\Users\pablo.diaz\Downloads
 
         // \\10.59.120.30\Share_Uy\Temporal\QA\Reportes_PayU
 
         //>move transactions.csv \\10.59.120.30\Share_Uy\Temporal\QA\Reportes_PayU
+
+        //mover al ftp de 10.1.1.40:21/payu_co/upload
 
         //transaccionesPage.enviarDescarga(cuentaAR,fechaAyer);
 
