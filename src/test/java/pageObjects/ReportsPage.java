@@ -17,13 +17,18 @@ public class ReportsPage extends BasePage{
     WebElement btnTransacciones;
 
 
-    public TransaccionesPage clickInTransacciones(){
+    public TransaccionesPage goToTransaccionesPage(){
 
         btnTransacciones.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='zk_comp_107']")));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='zk_comp_1764']")));
 
         return new TransaccionesPage(driver);
+    }
+
+    public Boolean btnTransaccionesIsDisplayed()
+    {
+        return driver.findElement(By.xpath("//a[@id='zk_comp_80']")).isDisplayed();
     }
 
 

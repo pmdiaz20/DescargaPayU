@@ -35,4 +35,19 @@ public class LoginPage extends BasePage {
         return new ReportsPage(driver);
     }
 
+    public Boolean btnIngresarIsDisplayed()
+    {
+        return driver.findElement(By.xpath("//input[@id='btnenviar']")).isDisplayed();
+    }
+
+    public Boolean userTextBoxIsDisplayed()
+    {
+        return driver.findElement(By.xpath("//input[@id='zk_comp_53']")).isDisplayed();
+    }
+
+    public Boolean passwordTextBoxIsDisplayed()
+    {
+        return driver.findElement(By.xpath("//input[@id='zk_comp_57']")).isDisplayed();
+    }
+
 }

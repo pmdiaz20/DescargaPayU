@@ -47,7 +47,7 @@ public class BaseTest {
 
             driver = new ChromeDriver(opt);
 
-            System.out.println("despues de new chromedriver");
+            //System.out.println("despues de new chromedriver");
 
 //            driver = new RemoteWebDriver(new URL(hubUrl), opt);
         } else if (ebrowser.equalsIgnoreCase(
